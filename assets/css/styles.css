@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'AcuminVariableConcept'; 
+    src: local('AcuminVariableConcept'), url('/assets/fonts/AcuminVariableConcept.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Averox-rgY9y'; 
+    src: local('Averox-rgY9y'), url('/assets/fonts/Averox-rgY9y.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Gothic'; 
+    src: local('Gothic'), url('/assets/fonts/GOTHIC.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'JoystixMonospace'; 
+    src: local('JoystixMonospace'), url('/assets/fonts/joystix_monospace.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'KozGoPr6N-Regular_0'; 
+    src: local('KozGoPr6N-Regular_0'), url('/assets/fonts/KozGoPr6N-Regular_0.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'SUBWT___'; 
+    src: local('SUBWT___'), url('/assets/fonts/SUBWT___.ttf') format('ttf');
+}
+
+.video-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.chat-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.bg-robot {
+    background-image: url('/assets/images/bg_robot.png');
+    background-size: cover;
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
