@@ -28,6 +28,14 @@
     src: local('SUBWT___'), url('/assets/fonts/SUBWT___.ttf') format('ttf');
 }
 
+.font-averox {
+    font-family: 'Averox-rgY9y', sans-serif;
+}
+
+.font-joystix {
+    font-family: 'JoystixMonospace', sans-serif;
+}
+
 .video-container {
     position: relative;
     top: 0;
@@ -63,7 +71,35 @@ video {
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.bg-girl {
+    background-image: url('/assets/images/bg_girl.png');
+    background-size: cover;
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.bg-video {
+    background-image: url('/assets/images/bg_video.png');
+    background-size: cover;
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.bg-roadmap {
+    background-image: url('/assets/images/bg_roadmap.png');
+    background-size: cover;
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    min-height: 4087px;
 }
