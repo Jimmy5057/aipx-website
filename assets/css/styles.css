@@ -1,39 +1,86 @@
 @font-face {
     font-family: 'AcuminVariableConcept'; 
-    src: local('AcuminVariableConcept'), url('/assets/fonts/AcuminVariableConcept.otf') format('otf');
+    src: local('AcuminVariableConcept'), url('../fonts/AcuminVariableConcept.otf') format('opentype');
 }
 
 @font-face {
-    font-family: 'Averox-rgY9y'; 
-    src: local('Averox-rgY9y'), url('/assets/fonts/Averox-rgY9y.ttf') format('ttf');
+    font-family: 'averox'; 
+    src: local('averox'), url('../fonts/averox.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Gothic'; 
-    src: local('Gothic'), url('/assets/fonts/GOTHIC.ttf') format('ttf');
+    src: local('Gothic'), url('../fonts/GOTHIC.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'JoystixMonospace'; 
-    src: local('JoystixMonospace'), url('/assets/fonts/joystix_monospace.otf') format('otf');
+    src: local('JoystixMonospace'), url('../fonts/joystix_monospace.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'KozGoPr6N-Regular_0'; 
-    src: local('KozGoPr6N-Regular_0'), url('/assets/fonts/KozGoPr6N-Regular_0.otf') format('otf');
+    src: local('KozGoPr6N-Regular_0'), url('../fonts/KozGoPr6N-Regular_0.otf') format('opentype');
 }
 
 @font-face {
-    font-family: 'SUBWT___'; 
-    src: local('SUBWT___'), url('/assets/fonts/SUBWT___.ttf') format('ttf');
+    font-family: 'subway_ticker'; 
+    src: local('subway_ticker'), url('../fonts/subway_ticker.ttf') format('truetype');
 }
 
 .font-averox {
-    font-family: 'Averox-rgY9y', sans-serif;
+    font-family: 'averox', monospace;
 }
 
 .font-joystix {
-    font-family: 'JoystixMonospace', sans-serif;
+    font-family: 'JoystixMonospace', monospace;
+}
+
+.font-joystix-outline {
+    color: transparent;
+    font-family: 'JoystixMonospace', monospace;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #2AECDA;
+}
+
+.font-subway {
+    font-family: 'subway_ticker', sans-serif;
+}
+
+.glow-text-green {
+    animation: glow-green 1s ease-in-out infinite alternate;
+}
+
+.glow-text-white {
+    animation: glow-white 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow-green {
+    from {
+      text-shadow: 0 0 1px #000, 0 0 2px #000, 0 0 3px #2AECDA, 0 0 4px #2AECDA, 0 0 5px #2AECDA, 0 0 6px #2AECDA, 0 0 7px #2AECDA;
+    }
+    
+    to {
+      text-shadow: 0 0 2px #000, 0 0 3px #2AECDA, 0 0 4px #2AECDA, 0 0 5px #2AECDA, 0 0 6px #2AECDA, 0 0 7px #2AECDA, 0 0 8px #2AECDA;
+    }
+}
+
+@-webkit-keyframes glow-white {
+    from {
+      text-shadow: 0 0 1px #000, 0 0 2px #000, 0 0 3px #fff, 0 0 4px #fff, 0 0 5px #fff, 0 0 6px #fff, 0 0 7px #fff;
+    }
+    
+    to {
+      text-shadow: 0 0 2px #000, 0 0 3px #fff, 0 0 4px #fff, 0 0 5px #fff, 0 0 6px #fff, 0 0 7px #fff, 0 0 8px #fff;
+    }
+}
+
+footer {
+    background-color: #05282F;
+}
+
+footer div{
+    background-color: #05282F;
 }
 
 .video-container {
@@ -102,4 +149,22 @@ video {
     height: 100%;
     width: 100%;
     min-height: 4087px;
+}
+
+.footer-social {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+@media only screen and (max-width: 1200px) {
+    .footer-social {
+        top: 50% !important;
+        left: 0 !important;
+        transform: translateY(-50%)!important
+    }
+
+    .footer-social-img {
+        transform: scale(0.6);
+    }
 }
