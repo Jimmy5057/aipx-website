@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
 @font-face {
     font-family: 'AcuminVariableConcept'; 
     src: local('AcuminVariableConcept'), url('../fonts/AcuminVariableConcept.otf') format('opentype');
@@ -28,8 +30,12 @@
     src: local('subway_ticker'), url('../fonts/subway_ticker.ttf') format('truetype');
 }
 
+.font-nova {
+    font-family: 'Nova Square', sans-serif;
+}
+
 .font-averox {
-    font-family: 'averox', monospace;
+    font-family: 'averox', sans-serif;
 }
 
 .font-joystix {
@@ -47,12 +53,33 @@
     font-family: 'subway_ticker', sans-serif;
 }
 
+.font-gothic {
+    font-family: 'Gothic', sans-serif;
+}
+
 .glow-text-green {
     animation: glow-green 1s ease-in-out infinite alternate;
 }
 
 .glow-text-white {
-    animation: glow-white 1s ease-in-out infinite alternate;
+    text-shadow:1px 1px 10px #fff, 1px 1px 8px #ccc;
+}
+
+.border-text-darkgreen {
+    -webkit-text-stroke-color: #004541;
+    -webkit-text-stroke-width: 1px; 
+}
+
+.supply-text {
+    color: #FFB300;
+    animation: glow-orange 1s ease-in-out infinite alternate;
+    letter-spacing: 2px;
+}
+
+.border-green {
+    border: 2px solid #2AEC96;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 @-webkit-keyframes glow-green {
@@ -65,22 +92,19 @@
     }
 }
 
-@-webkit-keyframes glow-white {
+@-webkit-keyframes glow-orange {
     from {
-      text-shadow: 0 0 1px #000, 0 0 2px #000, 0 0 3px #fff, 0 0 4px #fff, 0 0 5px #fff, 0 0 6px #fff, 0 0 7px #fff;
+      text-shadow: 0 0 1px #000, 0 0 2px #000, 0 0 3px #FFB300, 0 0 4px #FFB300, 0 0 5px #FFB300, 0 0 6px #FFB300, 0 0 7px #FFB300;
     }
     
     to {
-      text-shadow: 0 0 2px #000, 0 0 3px #fff, 0 0 4px #fff, 0 0 5px #fff, 0 0 6px #fff, 0 0 7px #fff, 0 0 8px #fff;
+      text-shadow: 0 0 2px #000, 0 0 3px #FFB300, 0 0 4px #FFB300, 0 0 5px #FFB300, 0 0 6px #FFB300, 0 0 7px #FFB300, 0 0 8px #FFB300;
     }
 }
 
-footer {
+.bg_footer{
     background-color: #05282F;
-}
-
-footer div{
-    background-color: #05282F;
+    background-image: url('/assets/images/bg_footer.png');
 }
 
 .video-container {
@@ -105,9 +129,18 @@ video {
 }
 
 .chat-container {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 100;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .bg-robot {
@@ -148,13 +181,21 @@ video {
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-    min-height: 4087px;
+    min-height: 5522px;
 }
 
 .footer-social {
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
+}
+
+.btn-web-vr {
+    color: #000 !important;
+    background-color: #2AECDA !important;
+    border: #2AECDA !important;
+    font-family: 'subway_ticker', sans-serif;
+    border-radius: 25px !important;
 }
 
 @media only screen and (max-width: 1200px) {
