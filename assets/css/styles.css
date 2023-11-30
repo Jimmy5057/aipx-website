@@ -74,6 +74,7 @@
     color: #FFB300;
     animation: glow-orange 1s ease-in-out infinite alternate;
     letter-spacing: 2px;
+    font-size: 2rem;
 }
 
 .border-green {
@@ -116,7 +117,7 @@
     overflow: hidden;
 }
 
-video {
+.video-full {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -184,6 +185,13 @@ video {
     min-height: 5522px;
 }
 
+.playback-ui {
+    background-image: url('/assets/images/playback-ui.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .footer-social {
     top: 50% !important;
     left: 50% !important;
@@ -198,6 +206,10 @@ video {
     border-radius: 25px !important;
 }
 
+.roadmap-container {
+    margin-top: 12vh !important;
+}
+
 @media only screen and (max-width: 1200px) {
     .footer-social {
         top: 50% !important;
@@ -207,5 +219,92 @@ video {
 
     .footer-social-img {
         transform: scale(0.6);
+    }
+
+    .font-joystix-outline {
+        font-size: 6rem !important;
+        margin-top: 25% !important;
+    }
+
+    .bg-video .font-joystix {
+        font-size: 0.8rem !important;
+    }
+
+    .bg-girl h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .explore-txt {
+        font-size: 0.9rem !important;
+    }
+
+    .bg-girl h4 {
+        font-size: 1rem !important;
+    }
+
+    .bg-girl img {
+        transform: scale(0.8) !important;
+    }
+
+    .point-txt {
+        font-size: 0.7rem !important;
+    }
+
+    #unleash-future h2 {
+        font-size: 2.5rem !important;
+    }
+
+    #unleash-future li {
+        font-size: 1rem !important;
+    }
+
+    #unleash-future img {
+        transform: scale(0.6) !important;
+    }
+
+    #unleash-future .flex-grow-1 span {
+        font-size: 0.8rem !important;
+    }
+
+    .supply-container h2 {
+        font-size: 4rem !important;
+    }
+
+    .supply-text {
+        font-size: 1.25rem !important;
+    }
+
+    .supply-container h3 {
+        font-size: 1.2rem !important;
+    }
+
+    .supply-container .font-gothic span {
+        font-size: 0.6rem !important;
+    }
+
+    /* .supply-container .title-img {
+        transform: scale(0.6) !important;
+    } */
+
+    .token-container {
+        margin-top: 50vh !important;
+    }
+
+    .defi-model h2 {
+        font-size: 1rem !important;
+    }
+
+    .roadmap-container {
+        margin-top: 25vh !important;
+    }
+
+    .roadmap-container .font-subway {
+        font-size: 4rem !important;
+    }
+
+    .timeline {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+        text-align: start;
     }
 }
