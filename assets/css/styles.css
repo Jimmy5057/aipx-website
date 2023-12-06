@@ -105,7 +105,7 @@
 
 .bg_footer{
     background-color: #05282F;
-    background-image: url('/assets/images/bg_footer.png');
+    background-image: url('../images/bg_footer.png');
 }
 
 .video-container {
@@ -145,7 +145,7 @@
 }
 
 .bg-robot {
-    background-image: url('/assets/images/bg_robot.png');
+    background-image: url('../images/bg_robot.png');
     background-size: cover;
     background-color: #000;
     background-position: center;
@@ -155,7 +155,7 @@
 }
 
 .bg-girl {
-    background-image: url('/assets/images/bg_girl.png');
+    background-image: url('../images/bg_girl.png');
     background-size: cover;
     background-color: #000;
     background-position: center;
@@ -165,7 +165,7 @@
 }
 
 .bg-girl2 {
-    background-image: url('/assets/images/bg_girl2.png');
+    background-image: url('../images/bg_girl2.png');
     background-size: cover;
     background-color: #000;
     background-position: center;
@@ -175,7 +175,7 @@
 }
 
 .bg-video {
-    background-image: url('/assets/images/bg_video.png');
+    background-image: url('../images/bg_video.png');
     background-size: cover;
     background-color: #000;
     background-position: center;
@@ -190,7 +190,7 @@
 }
 
 .bg-roadmap {
-    background-image: url('/assets/images/bg_roadmap.png');
+    background-image: url('../images/bg_roadmap.png');
     background-size: cover;
     background-color: #000;
     background-position: center;
@@ -201,7 +201,7 @@
 }
 
 .playback-ui {
-    background-image: url('/assets/images/playback-ui.png');
+    background-image: url('../images/playback-ui.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -378,7 +378,7 @@
     }
 
     .bg-roadmap {
-        background-image: url('/assets/images/bg_roadmap_m.png');
+        background-image: url('../images/bg_roadmap_m.png');
     }
 
     .notice-container h1 {
@@ -386,6 +386,6 @@
     }
 
     /* .bg-girl {
-        background-image: url('/assets/images/bg_girl_m.png');
+        background-image: url('../images/bg_girl_m.png');
     } */
 }
